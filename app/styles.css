@@ -1,0 +1,50 @@
+html{
+	font-family: OpenSans,Arial,Helvetica,sans-serif;
+}
+li.tag-green {
+  background-color: green;
+}
+li.tag-red {
+  background-color: red;
+}
+button{
+	background: #6699ff;
+	color: #fff;
+	border: none;
+	padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    font-weight: normal;
+    line-height: 24px;
+    cursor: pointer;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+}
+button:hover{
+	color: #fff;
+    background: #5581d8;
+}
+
+body, body input, body textarea{
+	font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 14px;
+    line-height: normal;
+    font-family: OpenSans, Arial, Helvetica, sans-serif;
+}
+
+.header{
+	font-size: 20px;
+}
