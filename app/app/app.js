@@ -38,13 +38,13 @@ app.directive('emailsEditor', function() {
     restrict: 'E',
     template: `
 	<p class="header">Share "Board name" with others</p>
-	<ul style="margin: 0; padding: 0; list-style-type: none; border: 1px; display: inline-block;">
-        <li ng-repeat="item in emails track by $index" style="float: left; border: 1px solid;" ng-class=\"getTagClass(item.isValid)\"">
+	<ul>
+        <li ng-repeat="item in emails track by $index" ng-class=\"getTagClass(item.isValid)\"">
             <span> {{item.email}} </span>
-            <span ng-click="removeTag($index)"> X </span>
+            <span class="remove" ng-click="removeTag($index)">  </span>
         </li>
-        <li style="float: left;">
-            <input placeholder="Add more people" style="border: 0;" ng-keydown="addTag($event)" ng-keyup="clr($event)" ng-blur="addTag($event)" ng-paste="addTag($event)" ng-model='value'>
+        <li class="inputLi">
+            <input placeholder="add more people ..." style="border: 0;" ng-keydown="addTag($event)" ng-keyup="clr($event)" ng-blur="addTag($event)" ng-paste="addTag($event)" ng-model='value'>
         </li>
     </ul><br/>
 	`,
